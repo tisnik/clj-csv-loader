@@ -10,7 +10,7 @@
 ;      Pavel Tisnovsky
 ;
 
-(ns chainring-service.csv-loader)
+(ns clj-csv-loader.csv-loader)
 
 (require '[clojure.data.csv :as csv])
 (require '[clojure.java.io  :as io])
