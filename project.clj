@@ -10,7 +10,7 @@
 ;      Pavel Tisnovsky
 ;
 
-(defproject clj-csv-loader "0.1.0-SNAPSHOT"
+(defproject org.clojars.tisnik/clj-csv-loader "0.1.0-SNAPSHOT"
     :description "Set of helper functions for loading CSV files."
     :url "http://example.com/FIXME"
     :license {:name "Eclipse Public License"
