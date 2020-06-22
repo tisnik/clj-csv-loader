@@ -19,23 +19,24 @@
 ;
 
 (defn callable?
-    "Test if given function-name is bound to the real function."
-    [function-name]
-    (clojure.test/function? function-name))
+  "Test if given function-name is bound to the real function."
+  [function-name]
+  (clojure.test/function? function-name))
 
 (deftest test-csv-data->maps-existence
-    "Check that the clj-csv-loader.csv-loader/csv-data->maps definition exists."
-    (testing "if the clj-csv-loader.csv-loader/csv-data->maps definition exists."
-        (is (callable? 'clj-csv-loader.csv-loader/csv-data->maps))))
+  "Check that the clj-csv-loader.csv-loader/csv-data->maps definition exists."
+  (testing "if the clj-csv-loader.csv-loader/csv-data->maps definition exists."
+           (is (callable? 'clj-csv-loader.csv-loader/csv-data->maps))))
 
 
 (deftest test-load-csv-existence
-    "Check that the clj-csv-loader.csv-loader/load-csv definition exists."
-    (testing "if the clj-csv-loader.csv-loader/load-csv definition exists."
-        (is (callable? 'clj-csv-loader.csv-loader/load-csv))))
+  "Check that the clj-csv-loader.csv-loader/load-csv definition exists."
+  (testing "if the clj-csv-loader.csv-loader/load-csv definition exists."
+           (is (callable? 'clj-csv-loader.csv-loader/load-csv))))
 
 
 (deftest test-load-csv-for-all-dates-existence
-    "Check that the clj-csv-loader.csv-loader/load-csv-for-all-dates definition exists."
-    (testing "if the clj-csv-loader.csv-loader/load-csv-for-all-dates definition exists."
-        (is (callable? 'clj-csv-loader.csv-loader/load-csv-for-all-dates))))
+  "Check that the clj-csv-loader.csv-loader/load-csv-for-all-dates definition exists."
+  (testing
+    "if the clj-csv-loader.csv-loader/load-csv-for-all-dates definition exists."
+    (is (callable? 'clj-csv-loader.csv-loader/load-csv-for-all-dates))))
