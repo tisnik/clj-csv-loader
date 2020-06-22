@@ -14,6 +14,28 @@
   (:require [clojure.test :refer :all]
             [clj-csv-loader.csv-loader :refer :all]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+;
+; Common functions used by tests.
+;
+
+(defn callable?
+    "Test if given function-name is bound to the real function."
+    [function-name]
+    (clojure.test/function? function-name))
+
+(deftest test-csv-data->maps-existence
+    "Check that the clj-csv-loader.csv-loader/csv-data->maps definition exists."
+    (testing "if the clj-csv-loader.csv-loader/csv-data->maps definition exists."
+        (is (callable? 'clj-csv-loader.csv-loader/csv-data->maps))))
+
+
+(deftest test-load-csv-existence
+    "Check that the clj-csv-loader.csv-loader/load-csv definition exists."
+    (testing "if the clj-csv-loader.csv-loader/load-csv definition exists."
+        (is (callable? 'clj-csv-loader.csv-loader/load-csv))))
+
+
+(deftest test-load-csv-for-all-dates-existence
+    "Check that the clj-csv-loader.csv-loader/load-csv-for-all-dates definition exists."
+    (testing "if the clj-csv-loader.csv-loader/load-csv-for-all-dates definition exists."
+        (is (callable? 'clj-csv-loader.csv-loader/load-csv-for-all-dates))))
