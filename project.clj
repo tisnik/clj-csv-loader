@@ -19,4 +19,5 @@
                  [org.clojure/data.csv "0.1.2"]]
   :plugins [[test2junit "1.1.0"]
             [codox "0.8.11"]
+            [lein-test-out "0.3.1"]
             [lein-cloverage "1.0.7-SNAPSHOT"]])
