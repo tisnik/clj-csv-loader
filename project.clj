@@ -17,8 +17,8 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.10.1"]
                  [org.clojure/data.csv "0.1.2"]]
-  :plugins [[test2junit "1.1.0"]
-            [codox "0.8.11"]
+  :plugins [[codox "0.8.11"]
+            [test2junit "1.1.0"]
             [lein-test-out "0.3.1"]
             [lein-cloverage "1.0.7-SNAPSHOT"]
             [lein-kibit "0.1.8"]])
