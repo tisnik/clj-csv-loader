@@ -4,6 +4,8 @@
 
 [Coverage report](https://tisnik.github.io/clj-csv-loader/coverage/cov.html)
 
+[Depencendies](doc/dependencies.clj)
+
 Bunch of helper functions to load CSV files and return its content as:
 
 * sequence of vectors
