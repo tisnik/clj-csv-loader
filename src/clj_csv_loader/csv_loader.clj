@@ -1,5 +1,5 @@
 ;
-;  (C) Copyright 2017, 2018, 2020  Pavel Tisnovsky
+;  (C) Copyright 2017, 2018, 2020, 2021  Pavel Tisnovsky
 ;
 ;  All rights reserved. This program and the accompanying materials
 ;  are made available under the terms of the Eclipse Public License v1.0
@@ -16,7 +16,7 @@
 (require '[clojure.java.io  :as io])
 
 (defn csv-data->maps
-  "Convert read CSV data into proper Clojure map."
+  "Convert read CSV data structure into proper Clojure map."
   [csv-data]
   (map zipmap
     (->> (first csv-data)  ;; header
@@ -25,7 +25,7 @@
     (rest csv-data)))
 
 (defn load-csv
-  "Load CSV specified by filename and convert it to a proper Clojure map."
+  "Load CSV data specified by filename and convert it to a proper Clojure map."
   [filename]
   (with-open [reader (io/reader filename)]
     (let [data (csv/read-csv reader)]
